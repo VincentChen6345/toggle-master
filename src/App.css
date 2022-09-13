@@ -22,6 +22,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--Grayish-Blue);
+  font-size: 2.5rem;
 }
 .toggle-switch {
   grid-column: 2/3;
@@ -30,6 +32,10 @@
 .card-1 {
   grid-column: 2/3;
   grid-row: 3/4;
+  /* background-image: linear-gradient(
+    to bottom right hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  ); */
 }
 .card-3 {
   grid-column: 3/4;

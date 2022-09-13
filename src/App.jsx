@@ -1,19 +1,13 @@
 import "./App.css";
 import Card from "./Components/Card";
+import ToggleMaster from "./Components/ToggleMaster";
 
 function App() {
   return (
     <div className="App" href="https://fonts.google.com/specimen/Montserrat">
       <div className="container">
         <h1 className="h1-title">Our Pricing</h1>
-        <div className="toggle-switch">
-          Annually
-          <label>
-            <input type="checkbox" checked />
-            <span></span>
-          </label>
-          Monthly
-        </div>
+        <ToggleMaster />
         <Card
           class="card-1"
           type="Professional"
@@ -21,6 +15,7 @@ function App() {
           storage="1TB"
           users="5"
           upload="10"
+          btnClass="card-btn center"
         />
         <Card
           class="card-2"
@@ -29,6 +24,7 @@ function App() {
           storage="500GB"
           users="2"
           upload="3"
+          btnClass="card-btn"
         />
         <Card
           class="card-3"
@@ -37,6 +33,7 @@ function App() {
           storage="1TB"
           users="5"
           upload="10"
+          btnClass="card-btn"
         />
       </div>
     </div>

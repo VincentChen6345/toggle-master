@@ -1,0 +1,54 @@
+.card-type {
+  color: var(--Grayish-Blue);
+}
+.card-type.center {
+  color: white;
+}
+.card-price {
+  font-size: 7rem;
+  margin: 3rem 0rem;
+}
+.card-features {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card-features__items {
+  border-top: 1px solid var(--Light-Grayish-Blue);
+  width: 80%;
+  padding: 1rem 0;
+}
+li:last-child {
+  border-bottom: 1px solid var(--Light-Grayish-Blue);
+}
+.card-btn {
+  margin: 2rem 0;
+  width: 80%;
+
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  border-style: none;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+}
+.card-btn.center {
+  background-image: none;
+  background-color: white;
+  color: var(--Purple);
+}
+
+.card-1.center {
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: white;
+}

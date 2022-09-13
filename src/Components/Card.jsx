@@ -1,15 +1,18 @@
+import "./Card.css";
+
 const Card = (props) => {
   return (
-    <div className={props.class}>
-      <h2>{props.type}</h2>
-      <p>${props.price}</p>
-      <ul>
-        <li>{props.storage} Storage</li>
-        <li>{props.users} Users Allowed</li>
-        <li>Send up to {props.upload}GB</li>
+    <div className={`${props.class} center`}>
+      <h2 className="card-type center">{props.type}</h2>
+      <p className="card-price">${props.price}</p>
+      <ul className="card-features">
+        <li className="card-features__items">{props.storage} Storage</li>
+        <li className="card-features__items">{props.users} Users Allowed</li>
+        <li className="card-features__items">Send up to {props.upload}GB</li>
       </ul>
-      <button>LEARN MORE</button>
+      <button className={props.btnClass}>LEARN MORE</button>
     </div>
   );
 };
 export default Card;
+/*"card-btn center" */

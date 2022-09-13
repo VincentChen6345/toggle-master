@@ -1,0 +1,80 @@
+.toggle-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*the switch- the box around the slider*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: aqua;
+  border-radius: 10rem;
+  margin: 0 2rem;
+}
+
+/*makes the square checkbox input visually disappear*/
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/*the slider*/
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  /* transition: background-image 2s ease-out;
+  -webkit-transition: background-image 2s ease-out; */
+  border-radius: 3.4rem;
+}
+
+/*the circle toggle*/
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  left: 3px;
+  bottom: 2.7px;
+  background-color: white;
+  transition: 0.2s;
+  border-radius: 3.4rem;
+}
+input:checked + .slider {
+  background-image: linear-gradient(
+    to left,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+}
+.text {
+  font-size: 1.2rem;
+  color: var(--Light-Grayish-Blue);
+}
+input:checked + .slider:before {
+  transform: translateX(2.4rem);
+}
+
+/*CSS lesson
+.class1.class2{} selects any element with both classes i.e.g class="class1 class2"
+
+.class1 .class2{} selects any element with its class as class2 and it has a parent element of class1
+
+p.intro{background-color:yellow} styles every paragraph element with the class 'intro'
+
++ sign--> the ajacent sibling combinator
+it combines 2 sequences of selectors both having the same parent,the second selector must come immediately after the first 
+
+*/
