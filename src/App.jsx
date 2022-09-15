@@ -9,7 +9,7 @@ function App() {
         <h1 className="h1-title">Our Pricing</h1>
         <ToggleMaster />
         <Card
-          class="card-1"
+          class="card card-1"
           type="Professional"
           price="24.99"
           storage="1TB"
@@ -18,7 +18,7 @@ function App() {
           btnClass="card-btn center"
         />
         <Card
-          class="card-2"
+          class="card card-2"
           type="Basic"
           price="19.99"
           storage="500GB"
@@ -27,7 +27,7 @@ function App() {
           btnClass="card-btn"
         />
         <Card
-          class="card-3"
+          class="card card-3"
           type="Master"
           price="39.99"
           storage="1TB"
