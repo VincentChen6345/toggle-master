@@ -5,17 +5,18 @@
   justify-content: center;
   align-items: center;
   background-color: var(--Very-Light-Grayish-Blue);
+  position: relative;
 }
 .container {
   text-align: center;
   display: grid;
   width: 70%;
-  height: 75%;
+  height: 85%;
   grid-template-columns: repeat(1fr, 3);
   grid-template-rows: 3rem 6rem 1fr;
-  background-color: lightgoldenrodyellow;
   grid-row-gap: 2rem;
   align-items: center;
+  z-index: 2;
 }
 .h1-title {
   grid-column: 2/3;
@@ -29,6 +30,7 @@
 .toggle-switch {
   grid-column: 2/3;
   grid-row: 2/3;
+  margin-bottom: 2rem;
 }
 .card {
   display: flex;
@@ -61,4 +63,16 @@
   border-top-left-radius: 1.2rem;
   border-bottom-left-radius: 1.2rem;
   height: 90%;
+}
+.top-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.bottom-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }

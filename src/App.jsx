@@ -1,6 +1,8 @@
 import "./App.css";
 import Card from "./Components/Card";
 import ToggleMaster from "./Components/ToggleMaster";
+import { ReactComponent as BottomSVG } from "./images/bg-bottom.svg";
+import { ReactComponent as TopSVG } from "./images/bg-top.svg";
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
         <Card
           class="card card-1"
           type="Professional"
-          price="24.99"
+          price="249.99"
           storage="1TB"
           users="5"
           upload="10"
@@ -20,7 +22,7 @@ function App() {
         <Card
           class="card card-2"
           type="Basic"
-          price="19.99"
+          price="199.99"
           storage="500GB"
           users="2"
           upload="3"
@@ -29,13 +31,15 @@ function App() {
         <Card
           class="card card-3"
           type="Master"
-          price="39.99"
+          price="399.99"
           storage="1TB"
           users="5"
           upload="10"
           btnClass="card-btn"
         />
       </div>
+      <BottomSVG className="bottom-svg" />
+      <TopSVG className="top-svg" />
     </div>
   );
 }

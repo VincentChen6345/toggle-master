@@ -7,7 +7,7 @@
   color: white;
 }
 .card-price {
-  font-size: 7rem;
+  font-size: 6.5rem;
   margin: 3rem 0rem;
   color: var(--Dark-Grayish-Blue);
 }
@@ -24,7 +24,7 @@
 .card-features__items {
   border-top: 1px solid var(--Light-Grayish-Blue);
   width: 80%;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   font-size: 1.3rem;
   letter-spacing: 0.5px;
   color: var(--Grayish-Blue);
