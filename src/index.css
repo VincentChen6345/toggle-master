@@ -19,10 +19,10 @@ html {
   --Purple: hsl(237, 63%, 64%);
 
   /*Breakpoints*/
-  --bp-normal: 1221px;
-  --bp-medium: 1019px;
-  --bp-small: 916px;
-  --bp-smaller: 575px;
+  --bp-normal: 1150px;
+  --bp-medium: 1010px;
+  --bp-small: 875px;
+  --bp-smaller: 515px;
   --bp-smallest: 445px;
 }
 /* -

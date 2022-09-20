@@ -65,4 +65,5 @@ li:last-child {
     hsl(237, 63%, 64%)
   );
   color: white;
+  box-shadow: 0 0 2rem rgba(152, 152, 152, 0.416);
 }

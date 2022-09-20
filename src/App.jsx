@@ -3,8 +3,12 @@ import Card from "./Components/Card";
 import ToggleMaster from "./Components/ToggleMaster";
 import { ReactComponent as BottomSVG } from "./images/bg-bottom.svg";
 import { ReactComponent as TopSVG } from "./images/bg-top.svg";
-
+import { usePlan } from "./Context/SubscriptionContext";
+import { useState } from "react";
 function App() {
+  const currentPlan = usePlan();
+  console.log("currentPlan is ", currentPlan);
+
   return (
     <div className="App" href="https://fonts.google.com/specimen/Montserrat">
       <div className="container">
@@ -13,7 +17,7 @@ function App() {
         <Card
           class="card card-1"
           type="Professional"
-          price="249.99"
+          price={currentPlan === "annually" ? "249.99" : "24.99"}
           storage="1TB"
           users="5"
           upload="10"
@@ -22,7 +26,7 @@ function App() {
         <Card
           class="card card-2"
           type="Basic"
-          price="199.99"
+          price={currentPlan === "annually" ? "199.99" : "19.99"}
           storage="500GB"
           users="2"
           upload="3"
@@ -31,7 +35,7 @@ function App() {
         <Card
           class="card card-3"
           type="Master"
-          price="399.99"
+          price={currentPlan === "annually" ? "399.99" : "39.99"}
           storage="1TB"
           users="5"
           upload="10"
