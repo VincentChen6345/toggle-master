@@ -37,6 +37,7 @@ li:last-child {
 }
 .card-btn {
   margin-top: 3rem;
+  cursor: pointer;
   width: 80%;
   height: 4rem;
   text-transform: uppercase;
@@ -52,10 +53,25 @@ li:last-child {
     hsl(237, 63%, 64%)
   );
 }
+.card-btn:hover {
+  background-image: none;
+  background-color: white;
+  color: var(--Purple);
+  border: 1px solid black;
+}
 .card-btn.center {
   background-image: none;
   background-color: white;
   color: var(--Purple);
+}
+.card-btn.center:hover {
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  border: 1px solid white;
 }
 
 .card-1.center {

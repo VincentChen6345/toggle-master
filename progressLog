@@ -18,3 +18,7 @@ Firday 16/9/22:
 - use useContext and useState to implement toggle functionality
 - add media queries
 - add active states for button:hover
+
+Monday 20/9/22:
+
+- finished media queries, just need to add active: states to button
