@@ -4,7 +4,6 @@ import ToggleMaster from "./Components/ToggleMaster";
 import { ReactComponent as BottomSVG } from "./images/bg-bottom.svg";
 import { ReactComponent as TopSVG } from "./images/bg-top.svg";
 import { usePlan } from "./Context/SubscriptionContext";
-import { useState } from "react";
 function App() {
   const currentPlan = usePlan();
   console.log("currentPlan is ", currentPlan);

@@ -1,8 +1,6 @@
 import "./ToggleMaster.css";
 import { useChangePlan } from "../Context/SubscriptionContext";
 const ToggleMaster = () => {
-  const checkbox = document.getElementById("checkbox");
-
   const changePlan = useChangePlan();
 
   return (
